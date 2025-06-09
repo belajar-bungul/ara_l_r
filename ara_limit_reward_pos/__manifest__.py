@@ -23,7 +23,7 @@
         ]
     },
     "installable": True,
-    "price" : 70.10,
+    "price" : 60.10,
     "currency": "USD",
     "images": ['static/description/banner.png'],
 
