@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- View loyalty.program form -->
+    <record id="view_loyalty_program_form" model="ir.ui.view">
+        <field name="name">view.loyalty.program.form</field>
+        <field name="model">loyalty.program</field>
+        <field name="inherit_id" ref="loyalty.loyalty_program_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="after">
+                <group string="Feature Specific">
+                    <field name="limit_value_program"/>
+                    <field name="value_used_program"/>
+                    <field name="date_start_flash_sale" invisible="program_type != 'coupons'"/>
+                    <field name="date_end_flash_sale" invisible="program_type != 'coupons'"/>
+                </group>
+            </xpath>
+            <xpath expr="//page[@name='communications']" position="after">
+                <page name="history_limit" string="History Limit">
+                    <field name="use_limit_ids" readonly="True">
+                        <list editable="bottom">
+                            <field name="name" width="25%"/>
+                            <field name="create_date" width="25%" />
+                            <field name="value_use" width="25%"/>
+                            <field name="currency_id" 
+                            column_invisible="1"
+                            />
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

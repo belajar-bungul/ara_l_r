@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <title>Limit Promotions by Points or Amount + Flash Sale Coupons</title>
+    </head>
+
+    <body>
+        <!-- Content Section -->
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="display-4 text-center">
+                        Limit Promotions by Points or Amount + Flash Sale
+                        Coupons
+                    </h1>
+                    <p class="lead text-center">POS / SALE</p>
+                </div>
+
+                <div class="col-md-12 mt-4">
+                    <h2>What is the Module Function?</h2>
+                    <br />
+                    <strong>
+                        This module adds advanced promotion controls for Point
+                        of Sale (POS) and Sales Order by allowing you to:
+                    </strong>
+                    <ul>
+                        <li>
+                            Limit Promotion Usage, based on Order Value / Total
+                            Amount.
+                        </li>
+                        <li>
+                            Enable Flash Sale Coupons, Create time-limited
+                            program type coupons. Coupons can be applied only
+                            within a specific date/time window.
+                        </li>
+                        <li>
+                            Dual Channel Support, All features work on both POS
+                            and Sales Order modules
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Tutorial Use Module</h2>
+                </div>
+                <p><b>How To Install?</b></p>
+                <p>
+                    Open App => search name module "ara_limit_reward_pos" =>
+                    Install
+                </p>
+                <p><b>1. Setup Type Promotions</b></p>
+                <p>
+                    Open Discount and Loyalty => Click New or update current
+                    record => Set program type to Promotions => Set limit value
+                    => Set condition rules and reward
+                </p>
+                <img class="col-md-12" src="/step1-1.png" />
+                <p><b>2. Use Sale Order (Type Promotions)</b></p>
+                <p>
+                    Open Sales => Create new record => Click Reward button. If
+                    reward value is more than the limit value, a pop-up
+                    notification will appear and the reward will not be added.
+                </p>
+                <img class="col-md-12" src="/step1-2.png" />
+                <p></p>
+                <p>
+                    If the reward value is less than or equal to the limit
+                    value, the promotion can be applied. When you click Confirm,
+                    it will automatically be recorded in the promotion history.
+                </p>
+                <img class="col-md-12" src="/step1-3.png" />
+                <img class="col-md-12" src="/step1-4.png" />
+                <p></p>
+                <p>
+                    If you click Cancel, the promotion will be automatically
+                    removed from the promotion history.
+                </p>
+                <img class="col-md-12" src="/step1-5.png" />
+                <img class="col-md-12" src="/step1-6.png" />
+                <p><b>3. Use Point of Sale (Type Promotions)</b></p>
+                <p>
+                    Open Point of Sale => Add product => Click Payment. The
+                    system automatically checks the limit. If the reward value
+                    exceeds the limit, the reward line will be automatically
+                    removed from the order.
+                </p>
+                <img class="col-md-12" src="/p1-1.png" />
+                <img class="col-md-12" src="/p1-2.png" />
+                <p></p>
+                <p>
+                    If the reward value is less than or equal to the limit
+                    value, choose a payment method and click Validate. The
+                    promotion will then be automatically added to the promotion
+                    history.
+                </p>
+                <img class="col-md-12" src="/p1-3.png" />
+                <img class="col-md-12" src="/p1-4.png" />
+
+                <p><b>4. Setup Type Coupons</b></p>
+                <p>
+                    Open Discount and Loyalty => Click New or update current
+                    record => Set program type to Coupons => Set limit value =>
+                    Set Flash Sale start and end date<br />
+                    => Set condition rules and reward => Click Generate Coupons
+                    and click Generate
+                </p>
+                <img class="col-md-12" src="/s1-1.png" />
+                <p><b>5. Use Sale Order (Type Coupons)</b></p>
+                <p>
+                    Open Sales => Create new record => Click Coupon Code button
+                    => A pop-up will appear. Input coupon code => Click Apply.
+                    If the reward value is more than the limit value, or the
+                    current date is outside the Flash Sale start and end date, a
+                    notification will appear and the reward will not be applied.
+                </p>
+                <img class="col-md-12" src="/s1-2.png" />
+                <img class="col-md-12" src="/s1-3.png" />
+                <p></p>
+                <p>
+                    If the reward value is less than or equal to the limit
+                    value, the coupon or flash sale can be applied from the
+                    start date to the end date. When you click Confirm, the
+                    promotion will automatically be added to the promotion
+                    history.
+                </p>
+                <img class="col-md-12" src="/s1-4.png" />
+                <img class="col-md-12" src="/s1-5.png" />
+                <p></p>
+                <p>
+                    If you click Cancel, the promotion will be automatically
+                    removed from the promotion history.
+                </p>
+                <img class="col-md-12" src="/s1-6.png" />
+                <img class="col-md-12" src="/s1-7.png" />
+                <p><b>6. Use Point of Sale (Type Coupons)</b></p>
+                <p>
+                    Open Point of Sale => Add product => Click Actions => Click
+                    Enter Code => Input code => Click Apply
+                </p>
+                <img class="col-md-12" src="/pos1-1.png" />
+                <img class="col-md-12" src="/pos1-2.png" />
+                <p></p>
+                <p></p>
+                <p></p>
+                <h2>
+                    Note: Coupons and Promotions in POS share the same usage
+                    limit logic, whether based on points or order amount.
+                </h2>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-3 mt-5">
+            <p>&copy; 2025 ARA SOFT. All Rights Reserved.</p>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
