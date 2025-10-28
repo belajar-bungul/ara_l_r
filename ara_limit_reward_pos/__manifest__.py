@@ -25,6 +25,6 @@
     "installable": True,
     "price" : 60.10,
     "currency": "USD",
-    "images": ['static/description/banner.png'],
+    "images": ['static/description/banner.gif'],
 
 }
