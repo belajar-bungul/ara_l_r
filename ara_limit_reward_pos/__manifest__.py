@@ -5,7 +5,7 @@
     "license": "OPL-1",
     "summary": "POS and Sale Customization",
     "category": "Sale",
-    "author": "",
+    "author": "ARA SOFT",
     "website": "",
     "description": """
          Reward Use Type coupon and promotions
